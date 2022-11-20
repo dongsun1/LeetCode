@@ -3,8 +3,8 @@
  * @return {boolean}
  */
 var isValid = function(s) {
-    let map = {'(' : ')', '[': ']', '{':'}'}
-    let stack = []
+    const map = {'(' : ')', '[': ']', '{':'}'}
+    const stack = []
     for(let ch of s){
         if(map[ch]) stack.push(map[ch])
         else if(stack.length > 0 && stack[stack.length-1] == ch) stack.pop()
