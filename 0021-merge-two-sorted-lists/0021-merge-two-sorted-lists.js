@@ -25,8 +25,8 @@ var mergeTwoLists = function(l1, l2) {
         change = change.next;
     }
     
-    if(l1 !== null) change.next = l1;
-    if(l2 !== null) change.next = l2;
+    if(l1) change.next = l1;
+    if(l2) change.next = l2;
     
     return mergedlist.next;
 };
